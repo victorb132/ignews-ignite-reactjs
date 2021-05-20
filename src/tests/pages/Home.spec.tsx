@@ -18,7 +18,7 @@ describe('Home page', () => {
     expect(screen.getByText('for R$10,00 month')).toBeInTheDocument()
   });
 
-  it('loads initial data', () => {
+  it('loads initial data', async () => {
     const retrieveStripePricesMocked = mocked(stripe.prices.retrieve)
 
     retrieveStripePricesMocked.mockResolvedValueOnce({
@@ -27,7 +27,7 @@ describe('Home page', () => {
 
     } as any)
 
-    const response = getStaticProps({})
+    const response = await getStaticProps({})
 
     expect(response).toEqual(
       expect.objectContaining({
