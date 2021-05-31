@@ -38,7 +38,7 @@ export function SubscribeButton() {
       className={styles.subscribe}
       onClick={handleSubscribe}
     >
-      Subscribe now
+      Subscribe now!
     </button>
   )
 }
