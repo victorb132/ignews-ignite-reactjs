@@ -22,7 +22,7 @@ export default function Home({ product }: HomeProps) {
       <h1>
         <main className={styles.contentContainer}>
           <section className={styles.hero}>
-            👋 Hey, welcome
+            👋 Hey, welcome!
           <h1>News about the <span>React</span> world.</h1>
           <p>
             Get access to all the publications <br />
